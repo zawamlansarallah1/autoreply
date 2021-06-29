@@ -12,7 +12,7 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)
  
-twt = api.search("#TVD",result_type="new",count=5) 
+twt = api.search("أنصار الله",result_type="new",count=5) 
  
 for s in twt:
    print(s.id)
